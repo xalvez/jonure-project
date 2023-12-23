@@ -1,0 +1,153 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+
+.header-main{
+    width:100%;
+    padding: 0 60px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    position: flex;
+    top: 0;
+    z-index: 100;
+}
+
+
+
+.header-main nav {
+    display: flex;    /* to make all the object near each other */
+}
+
+
+.header-main .logo{
+    height: 40px;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+}
+
+.header-main .logo img{    /* to makit sizefiting the border */
+    height: 100%;
+}
+
+.header-main ul{
+    height: 100%;
+    padding-left:40px ;
+    list-style: none;
+    display: flex;        /* to put them in the same line*/
+    align-self: center;
+}
+
+
+.header-main ul li{
+ position: relative;   /*  make the dropdowen goes under the parent*/
+}
+
+.header-main ul li ul li a{    /*to make the sentence in one line*/
+    white-space: nowrap;
+}
+
+.header-main ul li a {  /* navigation bar editing */
+    display: block;
+    padding: 0 10px;
+    height: 100%;
+    line-height: 60px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+}
+
+
+
+.header-main ul li a:hover{
+    background-color: aqua;
+    color: aliceblue;
+}
+
+
+ /* drop dowen styling*/
+
+ .header-main .drop{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    left: -40px;
+    transition: all ease-in-out 100ms;
+ }
+
+ul li:hover>.drop{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+
+ /*// drop dowen styling*/
+
+
+.header-main .sm{
+    align-self: center;
+    display: flex;
+}
+
+.header-main form{
+    height: 40px;
+    padding-right: 5px;
+    display: flex;
+    border: 1px solid rgb(111, 97, 97);
+    border-radius: 20px 100px 100px 20px;
+    width: fit-content;
+    align-self: center;
+}
+
+.header-main form input{
+    height: 100%;
+    width: 250px;
+    padding: 0 10px 0 20px;
+    border-radius: 20px 100px 100px 20px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    border-color: rgba(253, 4, 0, 0);
+    background-color: rgba(240, 248, 255, 0);
+    
+}
+
+
+.header-main form input:focus{
+    border: 1 solid rgb(255, 255, 255);
+    border-radius: 20px 100px 100px 20px;
+    border-bottom: 20px;
+     
+     
+    
+}
+
+.header-main form button{
+    width: fit-content;
+    padding: 0 5px 0 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(240, 248, 255, 0);
+}
+
+.header-main form button img{
+    height: 24px;
+    padding-top: 15%;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
