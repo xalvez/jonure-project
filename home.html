@@ -1,0 +1,207 @@
+
+ 
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+
+ 
+      
+    <link rel="stylesheet" href="cssfp.css">
+</head>
+<body>
+ 
+   
+
+     
+
+     <header>
+      
+     <label class="logo" ><img src="logo.png" width="30px" height="30px">BAT</label>
+      <nav class="navigation2" id="navbar">
+       <a href="#foot">ABOUT US</a>
+       <a href="">CONTACT</a>
+       <a href="">HOW TO HELP</a>
+       <a href="">OUR EVENTS</a>
+       <a href="">REGISTER</a>
+       <!-- <button class="btn-popup">Login</button> -->
+       </nav>
+          
+        
+
+
+      <div class="toggle"><ion-icon name="menu-outline"></ion-icon></div>
+     
+
+      <div class="drop-dowen ">
+      
+         <li> <a href="#">HOME</a></li>
+         <li>  <a href="#">Series</a></li>
+         <li><a href="file:///C:/Users/ASUS%20Ryzen%20505/Desktop/jonure/games/games.html">Games</a></li>
+          <li> <a href="#">About</a></li>
+          <li> <button class="btn-popup">Login</button></li>
+         
+
+      </div>
+    </header>
+
+      
+      <div class="wrapper" id="wrap">
+         <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+
+
+        <div class="box login">
+          <h2>Login</h2>
+          <form action="#">
+          
+            <div class="input-box">
+            <span class="icon">
+              <ion-icon name="mail"></ion-icon>
+            </span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+           
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="lock-closed"></ion-icon>
+            </span>
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+           
+          <div class="remember-forgot">
+
+            <label style="color: deeppink;" ><input type="checkbox" >Remember me</label>
+            <a href="#" style="color: deeppink;">Forgot password</a>
+          </div>
+             <button type="submit" class="btn">Login</button>
+             <div class="login-register">
+              <p style="color: deeppink;">Don't have an acoount ? <a href="#" class="register-link">Register</a></p>
+             </div>
+        </form>
+        </div>
+           <!--regestration window-->
+        <div class="box register">
+          <h2>Registration</h2>
+             <!--connecting with php-->
+             <form action="connect.php" method ="POST">
+          
+              <div class="input-box">
+                <span class="icon">
+                  <ion-icon name="person"></ion-icon>
+                </span>
+                <input type="text" name="username"  required >
+                <label>Username</label>
+              </div>
+          
+              <div class="input-box">
+              <span class="icon">
+                <ion-icon name="mail"></ion-icon>
+              </span>
+              <input type="email" name="email"required>
+              <label>Email</label>
+            </div>
+             
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" name="pwd" required>
+              <label>Password</label>
+            </div>
+             
+            <div class="remember-forgot">
+          
+              <label style="color: deeppink;" ><input type="checkbox">agree the terms</label>
+               
+            </div>
+               <button type="submit" class="btn">Register</button>
+               <div class="login-register">
+                <p style="color: deeppink;">Already have an acoount <a href="#" class="login-link">Login</a></p>
+               </div> 
+               <!--regestration window-->
+  
+          </form>
+          </div>
+        </div>
+
+
+      
+ <section class="sec">
+      <div class="textre" id="rev">
+        <h1>Welcome to BAT</h1>
+         <p>Download Games and buy Cards</p>
+       </div>
+         <script src="https://unpkg.com/scrollreveal"></script>
+
+<div class="bat-img" id="rev">
+        <img src="logo.png">
+      </div>
+ </section>
+
+
+      <script src="JS.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+      <!--//scroll reveal-->
+      
+   
+</br>
+               <!--footer -->
+<div class="footer" id="foot">
+   <div class="footer-content"> 
+    <div class="div footer-section-about">
+      <h1>About Us</h1>
+      <ul >
+        <li><a href="#">Our Sevices</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Afiliate Prgram</a></li>
+        <li><a href="#">Features</a></li>
+      </ul>
+    </div> 
+
+    <div class="footer-section-links"> 
+    <h1>Follow Us</h1>
+    <ul >
+      <li><a href="#" class="f" style="color: rgb(53, 53, 235);"><span class="icon2" ><ion-icon name="logo-facebook"></ion-icon></span>  Facebook</a></li>
+      <li><a href="#" class="i" style="color: rgb(217, 11, 228);"><span class="icon2"><ion-icon name="logo-instagram"></ion-icon></span>  Instagram</a></li>
+      <li><a href="#" class="y" style="color: rgb(255, 0, 0);"><span class="icon2" ><ion-icon name="logo-youtube"></ion-icon></span>  Youtube</a></li>
+      <li><a href="#" class="t" style="color: rgb(139, 5, 206);"><span class="icon2" ><ion-icon name="logo-twitch"></ion-icon> </span>  twitch</a></li>
+    </ul>
+  </div>
+
+    <div class="footer-section-help">
+      <h1>Get Help</h1>
+      <ul >
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Order status</a></li>
+        <li><a href="#">Payment Options</a></li>
+        <li><a href="#">FeedBack</a></li>
+      </ul>
+    </div> 
+   </div>
+    
+
+   <div class="footer-bottom">
+         &copy; majdmUstafa.com | Designed by MAJD MUSTAFA
+   </div>
+
+</div>
+
+
+              <!--//footer -->
+
+
+  
+  
+
+    
+</body>
+</html>
+
+ 
