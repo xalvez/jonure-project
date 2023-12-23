@@ -3,34 +3,48 @@
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Hello, World!</title>
+  <title>home</title>
   <link rel="stylesheet" href="jcss.css">
 </head>
 <body>
   
-  <headr>
+  <headr class="header-main">
     
     <nav>
-      <div class="logo">
-        <img src="" alt="website logo">
-      </div>
+      <a href="j_project.php" class="logo">
+        <img src="pic1.jpg" alt="website logo">
+    </a>
       <ul>
-        <li><a href="#">about us</a></li>
-        <ul>
-          <li><a href="">who we are</a></li>
-          <li><a href="">charity goals</a></li>
+        <li><a href="#">about us</a>
+        <ul class="drop">
+          <li><a href="#">who we are</a></li>
+          <li><a href="#">charity goals</a></li>
         </ul>
+      </li>
         <li><a href="#">contact</a></li>
-        <li><a href="#">how to help</a></li>
+        <li><a href="#">how to help</a>
+          <ul class="drop">
+              <li><a href="#">donate to charity</a></li>
+              <li><a href="#">donate to event</a></li>
+                          
+          </ul>
+          
+        </li>
         <li><a href="#">our events</a></li>
-        <li><a href="#">register</a></li>        
+        <li><a href="#">register</a>
+          <ul class="drop">
+            <li><a href="#">request to register as a beneficiary</a></li>
+            <li><a href="#">volunteering</a></li>
+            
+          </ul>
+        </li>        
       </ul>
       
     </nav>
     <div class="sm">
       <form action="" method="post">
-         <input type="text" name="search" placrholder="search ....">
-         <botton type="submit"><img src="" alt="search botton"></botton>   
+         <input type="text" name="search" placeholder="search.....">
+         <button type="submit"><img src="search_icon.png" alt="search button"></button>   
       </form>
   
     </div>
