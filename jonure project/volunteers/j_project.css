@@ -1,0 +1,412 @@
+body{
+    
+   background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+    
+}
+
+ header{
+    border: .25px solid black;
+ }
+ 
+.header-main{
+    width: 100%;
+     
+    top: 0;
+    position: fixed;
+    background-color: white;
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow: 5px 5px rgb(198, 199, 199);
+     
+    display: flex;
+    justify-content: space-between;
+    position: flex;
+    top: 0px;
+    z-index: 100;
+}
+
+ 
+ 
+
+.header-main nav {
+    display: flex;    /* to make all the object near each other */
+    
+}
+
+
+.header-main .logo{
+    height: 40px;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    margin-left: 40px;
+    
+}
+
+.header-main .logo img{    /* to makit sizefiting the border */
+    height: 200%;
+    width: 200%px;
+    border: 1 slid rgb(0, 0, 0);
+   
+}
+
+.header-main ul{
+    height: 100%;
+    padding-left:20px ;
+    list-style: none;
+    display: flex;        /* to put them in the same line*/
+    
+   
+}
+
+
+.header-main ul li{
+ position: relative;   /*  make the dropdowen goes under the parent*/
+    
+}
+
+.header-main ul li ul li a{    /*to make the sentence in one line*/
+    white-space: nowrap;
+    font-size: 1.25rem;
+     
+   
+    
+}
+ 
+
+
+.header-main ul li a {  /* navigation bar editing */
+    display: block;
+    padding: 0px 10px;
+    padding-left: 30px;
+    text-decoration: none;
+    height: 50%;
+    line-height: 60px;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    background-color: rgba(49, 125, 191, 0);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+    
+}
+
+
+
+.header-main ul li a:hover{
+    
+    color: rgb(142, 30, 206);
+
+    
+}
+
+
+ /* drop dowen styling*/
+
+ .header-main .drop{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    position: absolute; /* to make the drop not get extra space*/
+     
+    transition: all ease-in-out 100ms;
+   
+ }
+
+ul li:hover>.drop{
+    visibility: visible;
+    border: none;
+    opacity: 1;
+    display: block;
+    z-index: 2;
+    
+   
+ 
+}
+
+.header-main ul li .subnav:hover{
+    color: rgb(225, 90, 27);
+    
+    
+}
+.header-main ul li .subnav{
+    text-transform:lowercase;
+     
+}
+/* test animation*/
+#bord_anim {
+    animation: .5s anim-lineUp ease-out;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+ 
+
+  #bord_anim{
+    box-shadow: 5px 5px 10px grey;
+  }
+
+/* test animation*/
+
+.bord{
+    padding-right: 60px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+ .bord li a{
+    text-align: left;
+    justify-items: left;
+    padding-right: 40px;
+    
+    
+ }
+   
+  
+
+ /*// drop dowen styling*/
+
+/* background image*/
+
+.bk_img{
+    z-index: 1;
+    background-image: url("pichelp2.jpg");
+
+    /* Add the blur effect */
+    /* filter: blur(5px);
+    -webkit-filter: blur(4px); */
+  
+    /* Full height */
+    height: 150%;
+    margin-top:200px ;
+    /* box-shadow: 10px 10px 10px 10px black; */
+   
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+.bk_img img{
+    visibility: hidden;
+}
+
+.bk_img h1{
+    color: white;
+    text-align: center;
+   
+}
+
+ 
+
+
+.btn_nav{
+    color: rgba(240, 248, 255, 0);
+    background-color: rgba(0, 0, 139, 0);
+    border-color: rgba(240, 248, 255, 0);
+    cursor: pointer;
+    
+}
+
+.img_ms{
+    border: 1px solid black;
+    border-radius: 200px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.img_ms:hover{
+    border-color: rgb(255, 111, 0);
+    background-color: rgb(230, 193, 157);
+}
+.btn_chng{               /*usless */
+    width: 5px;
+    color: rgb(174, 205, 50);
+     
+    
+}
+
+.text_image{
+    display: flex;
+    vertical-align:middle;
+    align-items: center;
+    background-color: bisque;
+    
+    
+
+ }
+
+.food_dis{
+    margin-left: 10%;
+}
+
+
+.p_food{
+    font-size: 1.5rem;
+}
+
+
+.h1_food{
+    font-size: 3rem;
+}
+
+.food_dis ul li{
+    font-size: 1.25rem;
+}
+
+
+/*animation 2*/
+.food_dis {
+    animation: 2s anim-lineUp ease-out;
+  }
+  .food_dis2 {
+    animation: 2s anim-lineUp ease-out;
+  }
+
+  .food_needy {
+    animation: 2s anim-lineside ease-out;
+  }
+  .food_needy2 {
+    animation: 2s anim-lineside ease-out;
+  }
+  @keyframes anim-lineside {
+    0% {
+      opacity: 0;
+      transform: translateX(80%);
+    }
+    20% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+
+/*animation 2*/
+
+ .aid{
+   padding-left: 40%;
+      
+ }
+
+.btn_aid{
+     border: 0px;
+    padding: 15px;
+    width: 60%;
+    background-color:rgba(236, 94, 94, 0.845) ;
+    cursor: pointer;
+   
+}
+
+.btn_aid:hover{
+    background-color: rgb(245, 55, 55);
+    border-color: rgb(183, 35, 22);
+}
+
+
+
+.img_all{
+    display: flex;
+    vertical-align:middle;
+     padding-left: 10%;
+    
+}
+
+.img_all img{
+    width: 300px;
+    height: 300px;
+    
+     
+}
+
+.img_all p{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding-left: 60px;
+
+}
+
+
+.btn_do{
+    border: 0px;
+    width: 60%;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 45px;
+    cursor: pointer;
+    
+}
+
+
+
+.btn_do:hover{
+    background-color: rgb(244, 221, 191);
+
+
+}
+
+
+.btn_1{
+    background-color: rgb(244, 143, 1);
+}
+
+
+
+.scnd_pg{
+    display: flex;
+    vertical-align:middle;
+    background-color: rgb(174, 173, 173);
+  
+}
+
+
+ 
+
+.scd_img{
+    border: 4px solid rgb(203, 199, 199);
+    background-color: aliceblue;
+    padding-right: 50px;
+    display: flex;
+    vertical-align:middle;
+    padding: -10%;
+}
+
+.scd_img .sub_text{
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+
+
+
+
