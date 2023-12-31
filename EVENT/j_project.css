@@ -1,0 +1,402 @@
+body{
+    
+   background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+    
+}
+
+ header{
+    border: .25px solid black;
+ }
+ 
+.header-main{
+    width: 100%;
+     
+    top: 0;
+    position: fixed;
+    background-color: white;
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow: 5px 5px rgb(198, 199, 199);
+     
+    display: flex;
+    justify-content: space-between;
+    position: flex;
+    top: 0px;
+    z-index: 100;
+}
+
+ 
+ 
+
+.header-main nav {
+    display: flex;    /* to make all the object near each other */
+    
+}
+
+
+.header-main .logo{
+    height: 40px;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    margin-left: 40px;
+    
+}
+
+.header-main .logo img{    /* to makit sizefiting the border */
+    height: 200%;
+    width: 200%px;
+    border: 1 slid rgb(0, 0, 0);
+   
+}
+
+.header-main ul{
+    height: 100%;
+    padding-left:20px ;
+    list-style: none;
+    display: flex;        /* to put them in the same line*/
+    
+   
+}
+
+
+.header-main ul li{
+ position: relative;   /*  make the dropdowen goes under the parent*/
+    
+}
+
+.header-main ul li ul li a{    /*to make the sentence in one line*/
+    white-space: nowrap;
+    font-size: 1.25rem;
+     
+   
+    
+}
+ 
+
+
+.header-main ul li a {  /* navigation bar editing */
+    display: block;
+    padding: 0px 10px;
+    padding-left: 30px;
+    text-decoration: none;
+    height: 50%;
+    line-height: 60px;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    background-color: rgba(49, 125, 191, 0);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+    
+}
+
+
+
+.header-main ul li a:hover{
+    
+    color: rgb(142, 30, 206);
+
+    
+}
+
+
+ /* drop dowen styling*/
+
+ .header-main .drop{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    position: absolute; /* to make the drop not get extra space*/
+     
+    transition: all ease-in-out 100ms;
+   
+ }
+
+ul li:hover>.drop{
+    visibility: visible;
+    border: none;
+    opacity: 1;
+    display: block;
+    z-index: 2;
+    
+   
+ 
+}
+
+.header-main ul li .subnav:hover{
+    color: rgb(225, 90, 27);
+    
+    
+}
+.header-main ul li .subnav{
+    text-transform:lowercase;
+     
+}
+/* test animation*/
+#bord_anim {
+    animation: .5s anim-lineUp ease-out;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+ 
+
+  #bord_anim{
+    box-shadow: 5px 5px 10px grey;
+  }
+
+/* test animation*/
+
+.bord{
+    padding-right: 60px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+ .bord li a{
+    text-align: left;
+    justify-items: left;
+    padding-right: 40px;
+    
+    
+ }
+   
+  
+
+ /*// drop dowen styling*/
+
+/* background image*/
+
+.bk_img{
+    z-index: 1;
+    background-image: url("pichelp.avif");
+
+    /* Add the blur effect */
+    filter: blur(5px);
+    -webkit-filter: blur(4px);
+  
+    /* Full height */
+    height: 150%;
+    margin-top:200px ;
+    
+   
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+.bk_img img{
+    visibility: hidden;
+}
+
+
+.btn_nav{
+    color: rgba(240, 248, 255, 0);
+    background-color: rgba(0, 0, 139, 0);
+    border-color: rgba(240, 248, 255, 0);
+    cursor: pointer;
+    
+}
+
+.img_ms{
+    border: 1px solid black;
+    border-radius: 200px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.img_ms:hover{
+    border-color: rgb(255, 111, 0);
+    background-color: rgb(230, 193, 157);
+}
+.btn_chng{               /*usless */
+    width: 5px;
+    color: rgb(174, 205, 50);
+     
+    
+}
+
+
+ /*EVENT CUBE */
+
+main{
+    padding-top: 10%;
+    max-width: 1500px;
+    width: 95%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+   
+  }
+  
+  main .card{
+    max-width: 300px;
+    flex: 1 1 210px;
+    text-align: center;
+    height: 420px;
+    border: 1px solid lightgray;
+    margin: 20px;
+  }
+  
+  main .card .image{
+    height: 50%;
+    margin-bottom: 20px;
+  }
+  
+  main .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  main .card .caption{
+    padding-left: 1em;
+    text-align: left;
+    line-height: 3em;
+    height: 25%;
+  }
+  
+  main .card .caption p{
+    font-size: 1.5rem;
+  }
+  
+  del{
+    text-decoration: line-through;
+  }
+  
+  main .card .caption .rate{
+    display: flex;
+  }
+  
+  main .card .caption .rate i{
+    color: gold;
+    margin-left: 2px;
+  }
+  
+  main .card a{
+    width: 50%;
+  }
+  
+  main .card button{
+    border: 2px solid black;
+    padding: 1em;
+    width: 80%;
+    cursor: pointer;
+    margin-top: 2em;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  main .card button:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: black;
+    transition: all .5s;
+    margin: 0;
+  }
+  
+  main .card button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background-color: black;
+    transition: all .5s;
+  }
+  
+  main .card button:hover::before{
+    width: 30%;
+  }
+  
+  main .card button:hover::after{
+    width: 30%;
+  }
+
+
+ /*EVENT CUBE END */
+
+
+ /*form */
+ body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  position: relative;
+  bottom: 400px;
+ margin-top: 30%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+}
+
+.step-container {
+  display: none;
+}
+
+.step-container.active {
+  display: block;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+ /*form */
+
+
+

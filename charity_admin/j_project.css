@@ -1,0 +1,364 @@
+body{
+    
+   background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+    
+}
+
+ header{
+    border: .25px solid black;
+ }
+ 
+.header-main{
+    width: 100%;
+     
+    top: 0;
+    position: fixed;
+    
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow: 5px 5px rgb(198, 199, 199);
+     
+    display: flex;
+    justify-content: space-between;
+    position: flex;
+    top: 0px;
+    z-index: 100;
+}
+
+ 
+ 
+
+.header-main nav {
+    display: flex;    /* to make all the object near each other */
+    
+}
+
+
+.header-main .logo{
+    height: 40px;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    margin-left: 40px;
+    
+}
+
+.header-main .logo img{    /* to makit sizefiting the border */
+    height: 200%;
+    width: 200%px;
+    border: 1 slid rgb(0, 0, 0);
+   
+}
+
+.header-main ul{
+    height: 100%;
+    padding-left:20px ;
+    list-style: none;
+    display: flex;        /* to put them in the same line*/
+    
+   
+}
+
+
+.header-main ul li{
+ position: relative;   /*  make the dropdowen goes under the parent*/
+    
+}
+
+.header-main ul li ul li a{    /*to make the sentence in one line*/
+    white-space: nowrap;
+    font-size: 1.25rem;
+     
+   
+    
+}
+ 
+
+
+.header-main ul li a {  /* navigation bar editing */
+    display: block;
+    padding: 0px 10px;
+    padding-left: 30px;
+    text-decoration: none;
+    height: 50%;
+    line-height: 60px;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    background-color: rgba(49, 125, 191, 0);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+    
+}
+
+
+
+.header-main ul li a:hover{
+    
+    color: rgb(142, 30, 206);
+
+    
+}
+
+
+ /* drop dowen styling*/
+
+ .header-main .drop{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    position: absolute; /* to make the drop not get extra space*/
+     
+    transition: all ease-in-out 100ms;
+   
+ }
+
+ul li:hover>.drop{
+    visibility: visible;
+    border: none;
+    opacity: 1;
+    display: block;
+    z-index: 2;
+    
+   
+ 
+}
+
+.header-main ul li .subnav:hover{
+    color: rgb(225, 90, 27);
+    
+    
+}
+.header-main ul li .subnav{
+    text-transform:lowercase;
+     
+}
+/* test animation*/
+#bord_anim {
+    animation: .5s anim-lineUp ease-out;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+ 
+
+  #bord_anim{
+    box-shadow: 5px 5px 10px grey;
+  }
+
+/* test animation*/
+
+.bord{
+    padding-right: 60px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+ .bord li a{
+    text-align: left;
+    justify-items: left;
+    padding-right: 40px;
+    
+    
+ }
+   
+  
+
+ /*// drop dowen styling*/
+
+/* background image*/
+
+.bk_img{
+    z-index: 0;
+    background-image: url("pichelp.avif");
+
+    /* Add the blur effect */
+    filter: blur(5px);
+    -webkit-filter: blur(4px);
+  
+    /* Full height */
+    height: 150%;
+    margin-top:200px ;
+    
+   
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+.bk_img img{
+    visibility: hidden;
+}
+
+
+.btn_nav{
+    color: rgba(240, 248, 255, 0);
+    background-color: rgba(0, 0, 139, 0);
+    border-color: rgba(240, 248, 255, 0);
+    cursor: pointer;
+    
+}
+
+.img_ms{
+    border: 1px solid black;
+    border-radius: 200px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.img_ms:hover{
+    border-color: rgb(255, 111, 0);
+    background-color: rgb(230, 193, 157);
+}
+.btn_chng{               /*usless */
+    width: 5px;
+    color: rgb(174, 205, 50);
+     
+    
+}
+
+
+        /*log in */
+
+
+/* .container {
+    position: relative;
+    bottom: 400px; right: 0px;
+    z-index:99;
+    padding-bottom: 200px;
+  } */
+  
+  #login-window {
+    display: none;  /* Hide the login window by default */
+    position: fixed;
+    top: 50%;  /* Center the window vertically */
+    left: 50%; /* Center the window horizontally */
+    transform: translate(-50%, -50%); /* Center the window using transform */
+    padding: 20px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  #toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #toggle-btn img {
+    width: 32px;
+  }
+  
+  #toggle-btn:focus {
+    outline: none;
+  }
+  
+  #toggle-btn:focus,
+  #toggle-btn:active {
+    outline: none;
+  }
+  
+  #login-window.show {
+    display: block; /* Show the login window when the 'show' class is applied */
+  }
+ /*log in */
+
+
+
+
+ /*FORM */
+ .modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+.modal-content label, .modal-content input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#openWindow {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#openWindow:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
